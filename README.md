@@ -35,7 +35,7 @@ Lance le service web sur le port 8080
 
 # Résolution du problème
 
-Le code est commenté et accessible dans le fichier [src\main\java\com\semako\taskhappn\World.java](src\main\java\com\semako\taskhappn\World.java)
+Le code est commenté et accessible dans le fichier [src/main/java/com/semako/taskhappn/World.java](src/main/java/com/semako/taskhappn/World.java)
 
 ## Commentaires
 
@@ -45,7 +45,7 @@ Je fais quelque tests pour savoir si c'est le cas.
 
 Je voulais aussi un truc performant en mémoire. Donc pas de copie de gros tableau de valeurs, je suis passé principalement par des Streams.
 
-J'utilise des objects immutable Zone comme clé dans un dictionnaire de compteurs atomiques. Je ne crée le compteur d'une zone que si elle contient des points.
+J'utilise des objets immutables Zone comme clé dans un dictionnaire de compteurs atomiques. Je ne crée le compteur d'une zone que si elle contient des points.
 
 J'utilise une map accessible en concurrence et un compteur atomique parce que pour me challenger un peu j'ai voulu faire un traitement en parallèle. En pratique, je ferais d'abord des tests de performances pour décider de la meilleur approche.
 
