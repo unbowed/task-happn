@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POI</title>
+</head>
+<body>
+
+<h1>Count POI</h1>
+<form method="post" action="/count" enctype="multipart/form-data">
+    Zone to count
+    <label>Min Lat : </label>
+    <input type="number" name="lat" step="0.5" min="-90" max="89.5"/>
+    <label>Min Lon : </label>
+    <input type="number" name="lon" step="0.5" min="-180" max="179.5"/>
+    <br/> <br/>
+    <label>TSV File : </label>
+    <input type="file" name="file"/>
+    <input type="submit" value="Count POI" name="submit">
+</form>
+
+<h1>Display most dense zone</h1>
+<form method="post" action="/top" enctype="multipart/form-data">
+    <label>Top : </label>
+    <input type="number" name="n"> <br/> <br/>
+    <label>TSV File : </label>
+    <input type="file" name="file"/>
+    <input type="submit" value="Display zone" name="submit">
+</form>
+
+</body>
+</html>
