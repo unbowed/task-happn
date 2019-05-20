@@ -89,7 +89,7 @@ public class World {
 	 *  Example True for 0 or -90 or 5.5
 	 *  False for 5.20
 	 */
-	static private boolean isBoundary(double coord){
+	private static boolean isBoundary(double coord){
 		return Math.floor(coord*2) == (coord*2);
 	}
 
